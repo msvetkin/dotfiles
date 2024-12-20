@@ -10,8 +10,7 @@
         ll = "ls -l";
       };
       initExtra = ''
-        unset PAGER;
-        unset LESS;
+        PAGER=less;
       '';
       oh-my-zsh = {
         enable = true;
@@ -21,10 +20,6 @@
           "gitfast"
         ];
       };
-      initExtra = ''
-        unset PAGER
-        unset LESS
-      '';
       plugins = [
           {
             name = "zsh-nix-shell";
