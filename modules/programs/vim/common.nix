@@ -262,6 +262,7 @@ in
     let g:pymode_options_colorcolumn = 0
 
     let g:ale_lint_on_insert_leave = 0
+    let g:ale_linters_ignore = {'cpp': ['flawfinder', 'ccls', 'clang++']}
 
     let g:ctrlp_key_loop=1
     let g:ctrlp_max_files=2000000
