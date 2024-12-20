@@ -7,7 +7,7 @@
 
   xdg.configFile = {
     "ccache/ccache.conf".text = ''
-    max_size = 20G
+    max_size = 50G
     '';
   };
 }
