@@ -8,17 +8,17 @@ let
 
   names = [
     "1:browser"
-    "2:console"
-    "3:gvim"
+    "2:term"
+    "3:any"
     "4:ide"
-    "5:ide"
-    "6:browser"
-    "7:chats"
-    "8:console"
+    "5:term"
+    "6:ide"
+    "7:browser"
+    "8:chats"
     "9:browser"
     "10:audio"
-    "11:other"
-    "12:other"
+    "11:any"
+    "12:any"
   ];
 
   templates = builtins.genList (i: {
@@ -48,11 +48,11 @@ in
       display = builtins.elemAt displays 0;
     }) ++
     (setDisplay {
-      workspaces = lib.lists.sublist 3 3 templates;
+      workspaces = lib.lists.sublist 3 4 templates;
       display = builtins.elemAt displays 1;
     }) ++
     (setDisplay {
-      workspaces = lib.lists.sublist 6 6 templates;
+      workspaces = lib.lists.sublist 7 5 templates;
       display = builtins.elemAt displays 2;
     })
   else
