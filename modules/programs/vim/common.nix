@@ -79,10 +79,10 @@ in
      pkgs.vimPlugins.vim-indent-object
      pkgs.vimPlugins.vim-multiple-cursors
      pkgs.vimPlugins.python-mode
-     pkgs.vimPlugins.supertab
+     #pkgs.vimPlugins.supertab
      pkgs.vimPlugins.tagbar
      #pkgs.vimPlugins.cocoa.vim
-     pkgs.vimPlugins.YouCompleteMe
+     # pkgs.vimPlugins.YouCompleteMe
      pkgs.vimPlugins.vim-qml
      pkgs.vimPlugins.vim-fugitive
      pkgs.vimPlugins.vim-move
@@ -218,8 +218,8 @@ in
     let g:NERDTrimTrailingWhitespace = 1
     let g:NERDCustomDelimiters = { 'pro': { 'left': '#' } }
 
-    let g:SuperTabDefaultCompletionType = "context"
-    let g:SuperTabContextDefaultCompletionType = "<c-n>"
+    "let g:SuperTabDefaultCompletionType = "context"
+    "let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
     let g:UltiSnipsExpandTrigger = "<c-tab>"
     let g:UltiSnipsListSnippets = '<c-CR>'
