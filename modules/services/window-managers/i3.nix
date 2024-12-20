@@ -167,6 +167,7 @@ in {
         bars = bars;
 
         startup = [
+          { command = "autorandr --change"; notification = false; }
           { command = "xxkb"; notification = false; }
           { command = "xset b off"; notification = false; }
           { command = "sleep 10s && ${pkgs.variety}/bin/variety --next"; notification = false; }
