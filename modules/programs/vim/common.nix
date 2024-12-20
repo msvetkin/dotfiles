@@ -92,6 +92,7 @@ in
      pkgs.vimPlugins.ale
      pkgs.vimPlugins.vim-toml
      pkgs.vimPlugins.vim-nix
+     pkgs.vimPlugins.vim-markdown-toc
      plugins.vim-cpp-modern
   ] ++ builtins.attrValues plugins;
   extraConfig = ''
